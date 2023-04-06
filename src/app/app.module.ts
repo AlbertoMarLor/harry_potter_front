@@ -7,12 +7,14 @@ import { MoviesComponent } from './components/movies/movies.component';
 import { CharactersComponent } from './components/characters/characters.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CharacterComponent } from './components/character/character.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
-    CharactersComponent
+    CharactersComponent,
+    CharacterComponent
   ],
   imports: [
     ReactiveFormsModule,
