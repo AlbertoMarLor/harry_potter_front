@@ -1,6 +1,9 @@
-<div class="characters">
-    <div class="character" *ngFor="let character of characters" [routerLink]="['/character', character.id]">
-        <h3>{{character.name}}</h3>
-        <img [src]="character.image" alt="">
+<div class="container">
+    <div class="characters row">
+        <div class="character col-12 col-xl-4" *ngFor="let character of characters"
+            [routerLink]="['/character', character.id]">
+            <h3>{{character.name}}</h3>
+            <img [src]="character.image" alt="">
+        </div>
     </div>
 </div>

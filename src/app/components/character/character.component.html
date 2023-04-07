@@ -1,8 +1,14 @@
-<div class="container">
+<div class="container ">
 
-    <div>
-        <h3>{{character.name}}</h3>
-        <img [src]="character.image" alt="">
+    <div class="row">
+
+        <div class="col-4">
+            <h3>{{character.name}}</h3>
+            <img [src]="character.image" alt="">
+        </div>
+        <div class="description col-6">
+            <p>{{character.description}}</p>
+
+        </div>
     </div>
-
 </div>

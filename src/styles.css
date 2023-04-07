@@ -1,6 +1,16 @@
 @font-face {
-    font-family: 'Magic School Two';
-    src: url('https://www.fontsaddict.com/fontface/magic-school-two.ttf');
+    font-family: 'harry_potterregular';
+    src: url('../src/assets/font/harrp___-webfont.woff2') format('woff2'),
+        url('../src/assets/font/harrp___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: 'harry_potterregular';
+    text-shadow: 3px 3px black;
+    color: orange
 }
 
 body {
