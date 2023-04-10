@@ -8,13 +8,17 @@ import { CharactersComponent } from './components/characters/characters.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CharacterComponent } from './components/character/character.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
     CharactersComponent,
-    CharacterComponent
+    CharacterComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     ReactiveFormsModule,

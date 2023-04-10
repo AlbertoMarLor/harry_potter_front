@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 @Injectable({
   providedIn: 'root'
@@ -20,8 +20,13 @@ export class MoviesService {
   }
 
   getAll() {
+    const options = {
+      headers: new HttpHeaders({
+        'Authorization': localStorage.getItem('tokenPotter')!
+      })
+    }
     return firstValueFrom(
-      this.HttpClient.get<any>(this.baseUrl)
+      this.HttpClient.get<any>(this.baseUrl, options)
     )
   }
 
